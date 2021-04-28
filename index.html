@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<style type="text/css">
+	#space {
+    background-color: #4B4B4B;
+    margin: 10px;
+    padding: 10px;
+    clear: both;
+    float: none;
+    height: 90%;
+    width: 640px;
+}
+    #space {
+    clear: none;
+    float: none;
+    height: 100%;
+    width: 700px;
+    color: #FAFBFB;
+}
+    </style>
+  </head>
+<body>
+  	<!-- body code goes here -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script>
+<div class="container-fluid">
+  <div class="container-fluid">
+    <ul id="clothingnav1" class="nav nav-tabs" role="tablist">
+      <li class="nav-item"> <a class="nav-link active" href="#home1" id="hometab1" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">rojo&nbsp;</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#paneTwo2" role="tab" id="hatstab1" data-toggle="tab" aria-controls="hats">amarillo&nbsp;</a> </li>
+		 <li class="nav-item"> <a class="nav-link" href="#paneTwo3" role="tab" id="hatstab2" data-toggle="tab" aria-controls="hats">azul&nbsp;</a> </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> combinaciones&nbsp; </a>
+        <div class="dropdown-menu"> <a class="dropdown-item" href="#tabDropDownOne1" role="tab" id="dropdownshoestab1" data-toggle="tab" aria-controls="dropdownShoes">Dropdown Link 1</a> <a class="dropdown-item" href="#tabDropDownTwo1" role="tab" id="dropdownbootstab1" data-toggle="tab" aria-controls="dropdownBoots">Dropdown Link 2</a> </div>
+      </li>
+    </ul>
+    <!-- Content Panel -->
+    <div id="clothingnavcontent1" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade show active" id="home1" aria-labelledby="hometab1">
+        <p>Content 1</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="paneTwo1" aria-labelledby="hatstab1">
+        <p>Content 2</p>
+      </div>
+		<div role="tabpanel" class="tab-pane fade" id="paneTwo2" aria-labelledby="hatstab2">
+        <p>content 2</p>
+      </div>
+		<div role="tabpanel" class="tab-pane fade" id="paneTwo3" aria-labelledby="hatstab2">
+        <p>Content 3</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="tabDropDownOne1" aria-labelledby="dropdownshoestab1">
+        <p>tonos</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="tabDropDownTwo1" aria-labelledby="dropdownbootstab1">
+        <p>saturaciones</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="space">Colores y sus diferentes gamas y cromaticas</div>
+  <div class="container">
+    <div id="accordion1" role="tablist">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne1">
+          <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> monocromaticos&nbsp; </a> </h5>
+        </div>
+        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+          <div class="card-body">paletas de colores&nbsp;</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1"> Cálidos&nbsp; </a> </h5>
+        </div>
+        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+          <div class="card-body">paletas de colores</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingThree1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> Fríos&nbsp; </a> </h5>
+        </div>
+        <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+          <div class="card-body">paletas de colores</div>
+        </div>
+      </div>
+		   <div class="card">
+        <div class="card-header" role="tab" id="headingThree1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> Contrastes&nbsp; </a> </h5>
+        </div>
+        <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+          <div class="card-body">paletas de colores</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
